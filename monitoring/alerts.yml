@@ -1,8 +1,18 @@
+<<<<<<< HEAD
 - alert: HighErrorRate
+=======
+# Prometheus Alerts
+
+      - alert: HighErrorRate
+>>>>>>> feature/monitoring
         expr: rate(http_requests_total{status=~"5.."}[5m]) > 0.05
         for: 2m
         labels:
           severity: critical
         annotations:
           summary: "Yüksək xəta nisbəti"
+<<<<<<< HEAD
           description: "Xəta dərəcəsi 5%-dən yuxarıdır."# Prometheus Alerts
+=======
+          description: "Xəta dərəcəsi 5%-dən yuxarıdır."
+>>>>>>> feature/monitoring
